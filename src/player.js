@@ -23,18 +23,17 @@ export class Player {
 
     update(input, map) {
         // Horizontal Movement
-        // Lógica invertida para corrigir o problema relatado: D deve mover para frente.
         if (input.keys.left) {
-            this.vx = this.speed; 
-            this.facing = 1;
-        } else if (input.keys.right) {
             this.vx = -this.speed; 
             this.facing = -1;
+        } else if (input.keys.right) {
+            this.vx = this.speed; 
+            this.facing = 1;
         } else {
             this.vx = 0;
         }
 
-        // Jumping
+        // Jumping (W ou Space)
         if (input.keys.jump && this.onGround) {
             this.vy = this.jumpForce;
             this.onGround = false;

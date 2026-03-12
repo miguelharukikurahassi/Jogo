@@ -4,6 +4,7 @@ export class InputHandler {
             left: false,
             right: false,
             up: false,
+            down: false,
             jump: false
         };
 
@@ -25,7 +26,11 @@ export class InputHandler {
             case 'KeyW':
             case 'Space':
                 this.keys.up = isPressed;
-                this.keys.jump = isPressed; // Simple jump trigger
+                this.keys.jump = isPressed;
+                break;
+            case 'ArrowDown':
+            case 'KeyS':
+                this.keys.down = isPressed;
                 break;
         }
     }

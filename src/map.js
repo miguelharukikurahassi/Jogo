@@ -1,4 +1,4 @@
-export class GameMap {
+class GameMap {
     constructor(tileSize = 32) {
         this.tileSize = tileSize;
         this.cols = 25;

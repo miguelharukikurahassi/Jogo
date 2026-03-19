@@ -1,6 +1,4 @@
-import { InputHandler } from './input.js';
-import { GameMap } from './map.js';
-import { Player } from './player.js';
+
 
 class Game {
     constructor() {

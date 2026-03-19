@@ -1,4 +1,4 @@
-export class Player {
+class Player {
     constructor(x, y, tileSize) {
         this.x = x;
         this.y = y;
